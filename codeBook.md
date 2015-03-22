@@ -1,4 +1,5 @@
-Output Columns Information
+###  Output Columns Information
+
 1.Subject
 Subject for observation as defined in the data set, ranging from 1 to 30.
 2.Activity, 
@@ -250,7 +251,8 @@ Mean frequency of magnitude of all observations in frequency domain of body body
 Magnitude is calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, 
 tBodyGyroMag, tBodyGyroJerkMag).      
 
-Internal Variables of Code:
+### Internal Variables of Code:
+
 1. Subject_train:
 subject train variable.
 2. x_train:
@@ -274,5 +276,6 @@ labels of activities for example WALKING.
 11. tidyData
 final tidyData with mean of each activity for each subject. 
 
-output.txt:
+### output.txt:
+
 output.txt contains output generated from tidyData variable. Each column is tab separated. 
