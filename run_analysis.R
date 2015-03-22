@@ -1,16 +1,16 @@
 ## Description: Final project script 
 ## Author:      Shahid Akram
 
-## define working directory relative to the home directory
-workingDirectory <- "data/UCI HAR Dataset/"
-
 ## load packages
 library(dplyr)
 
+## define working directory relative to the home directory
+workingDirectory <- getwd()
+
 ## 1. Read train data into tables
-subject_train <- read.table(paste(workingDirectory,"train/subject_train.txt", sep = ""))
-x_train <- read.table(paste(workingDirectory, "train/X_train.txt", sep = ""))
-y_train <- read.table(paste(workingDirectory, "train/y_train.txt", sep = ""))
+subject_train <- read.table(paste(workingDirectory,"/train/subject_train.txt", sep = ""))
+x_train <- read.table(paste(workingDirectory, "/train/X_train.txt", sep = ""))
+y_train <- read.table(paste(workingDirectory, "/train/y_train.txt", sep = ""))
 
 ## 2. Combine trainData into columns as first column, subject train, second column
 ## as y_train, next 561 columns as x_train
@@ -18,9 +18,9 @@ trainData <- cbind(subject_train, y_train, x_train)
 
 
 ## 3. Read test data into tables
-subject_test <- read.table(paste(workingDirectory,"test/subject_test.txt", sep = ""))
-x_test <- read.table(paste(workingDirectory, "test/X_test.txt", sep = ""))
-y_test <- read.table(paste(workingDirectory, "test/y_test.txt", sep = ""))
+subject_test <- read.table(paste(workingDirectory,"/test/subject_test.txt", sep = ""))
+x_test <- read.table(paste(workingDirectory, "/test/X_test.txt", sep = ""))
+y_test <- read.table(paste(workingDirectory, "/test/y_test.txt", sep = ""))
 
 ## 4. Combine testData into columns as first column, subject test, second column
 ## as y_test, next 561 columns as x_test
@@ -30,7 +30,7 @@ testData <- cbind(subject_test, y_test, x_test)
 finalData <- rbind(trainData, testData)
 
 ## 5. read features_info from file, make put it as column names of new data set
-features <- read.table(paste(workingDirectory, "features.txt", sep = ""));
+features <- read.table(paste(workingDirectory, "/features.txt", sep = ""));
 df <- data.frame(V1 = c(1, 2), V2 = c("subject", "labels"))
 dataHeader <- rbind(df, features)
 colnames(finalData) <- dataHeader$V2
@@ -42,16 +42,16 @@ meanAndStdColNames <- grep("(^.*mean.*$)|(^.*std.*$)|(^.*subject*$)|(^.*labels*$
 finalData <- finalData[, meanAndStdColNames]
 
 ##7 read activities
-activites_label <- read.table(paste(workingDirectory, "activity_labels.txt", sep = ""));
+activites_label <- read.table(paste(workingDirectory, "/activity_labels.txt", sep = ""));
 
-##7. Link activity with labels 
+##8. Link activity with labels 
 finalData <- merge(activites_label, finalData)
 
-##8. Remove extra columns produced by merging
+##9. Remove extra columns produced by merging
 finalData$V1 <- NULL
 finalData$labels <- NULL
 
-##9. Give descriptive names to each column, each row contains 3 column names in lower camel case
+##10. Give descriptive names to each column, each row contains 3 column names in lower camel case
 colnames(finalData) <- c("Activity", "Subject", "timeDomainBodyAccelerationMeanX", 
                          "timeDomainBodyAccelerationMeanY", "timeDomainBodyAccelerationMeanZ","timeDomainBodyAccelerationStandardDeviationX", 
                          "timeDomainBodyAccelerationStandardDeviationY", "timeDomainBodyAccelerationStandardDeviationZ", "timeDomainGravityAccelerationMeanX", 
@@ -81,11 +81,11 @@ colnames(finalData) <- c("Activity", "Subject", "timeDomainBodyAccelerationMeanX
                          "frequencyDomainBodyByGyroJerkMagnitudeMean", "frequencyDomainBodyBodyGyroJerkMagnitudeStandardDeviation", "frequencyDomainBodyBodyGyroJerkMagnitudeMeanFrequency")
 
 
-##10. average it one subject and label
+##11. average it one subject and label
 tidyData <- finalData %>% group_by(Subject, Activity) %>% summarise_each(funs(mean))
 
-##11. export data set
-write.table(tidyData, paste(workingDirectory,"output.txt", sep=""), row.name=FALSE)
+##12. export data set
+write.table(tidyData, paste(workingDirectory,"/output.txt", sep=""), row.name=FALSE, sep="\t")
 
 
 
