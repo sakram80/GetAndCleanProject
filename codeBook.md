@@ -7,88 +7,88 @@ activity label for rows for example WALKNG, LYING. it is also define in data set
 3.timeDomainBodyAccelerationMeanX 
 Mean value of all observations in time domain of body acceleration in X direction 
 for each activity for each subject. 
-4. timeDomainBodyAccelerationMeanY 
+4.timeDomainBodyAccelerationMeanY 
 Mean value of all observations in time domain of body acceleration in Y direction 
 for each activity for each subject. 
-5. timeDomainBodyAccelerationMeanZ
+5.timeDomainBodyAccelerationMeanZ
 Mean value of all observations in time domain of body acceleration in X direction 
 for each activity for each subject. 
-6. timeDomainBodyAccelerationStandardDeviationX
+6.timeDomainBodyAccelerationStandardDeviationX
 Standard deviation of all observations in time domain of body acceleration in X 
 direction for each activity for each subject.  
-7. timeDomainBodyAccelerationStandardDeviationY
+7.timeDomainBodyAccelerationStandardDeviationY
 Standard deviation of all observations in time domain of body acceleration in Y 
 direction for each activity for each subject.   
-8. timeDomainBodyAccelerationStandardDeviationZ
+8.timeDomainBodyAccelerationStandardDeviationZ
 Standard deviation of all observations in time domain of body acceleration in Z 
 direction for each activity for each subject.   
-9. timeDomainGravityAccelerationMeanX
+9.timeDomainGravityAccelerationMeanX
 Mean value of all observations in time domain of gravitational acceleration in X 
 direction for each activity for each subject. 
-10. timeDomainGravityAccelerationMeanY
+10.timeDomainGravityAccelerationMeanY
 Mean value of all observations in time domain of gravitational acceleration in Y 
 direction for each activity for each subject. 
-11. timeDomainGravityAccelerationMeanZ
+11.timeDomainGravityAccelerationMeanZ
 Mean value of all observations in time domain of gravitational acceleration in X 
 direction for each activity for each subject. 
-12. timeDomaindGravityAccelerationStandardDeviationX, 
+12.timeDomaindGravityAccelerationStandardDeviationX, 
 Standard deviation of all observations in time domain of gravitational acceleration 
 in X direction for each activity for each subject. 
-13. timeDomaindGravityAccelerationStandardDeviationY 
+13.timeDomaindGravityAccelerationStandardDeviationY 
 Standard deviation of all observations in time domain of gravitational acceleration 
 in Y direction for each activity for each subject. 
-14. timeDomaindGravityAccelerationStandardDeviationZ, 
+14.timeDomaindGravityAccelerationStandardDeviationZ, 
 Standard deviation of all observations in time domain of gravitational acceleration in 
 Z direction for each activity for each subject. 
-15. timeDomainBodyAccelerationJerkmeanX 
+15.timeDomainBodyAccelerationJerkmeanX 
 Mean value of all observations in time domain of body acceleration jerk in X direction 
 for each activity for each subject. 
-16. timeDomainBodyAccelerationJerkMeanY
+16.timeDomainBodyAccelerationJerkMeanY
 Mean value of all observations in time domain of body acceleration jerk in Y direction 
 for each activity for each subject. 
-17. timeDomainBodyAccelerationJerkMeanZ
+17.timeDomainBodyAccelerationJerkMeanZ
 Mean value of all observations in time domain of body acceleration jerk in Z direction 
 for each activity for each subject.  
 18timeDomainBodyAccelerationJerkStandardDeviationX
 Standard deviation of all observations in time domain of body acceleration jerk in X 
 direction for each activity for each subject.  
-19. timeDomainBodyAccelerationJerkStandardDeviationY
+19.timeDomainBodyAccelerationJerkStandardDeviationY
 Standard deviation of all observations in time domain of body acceleration jerk in Y 
 direction for each activity for each subject.   
-20. timeDomainBodyAccelerationJerkStandardDeviationZ
+20.timeDomainBodyAccelerationJerkStandardDeviationZ
 Standard deviation of all observations in time domain of body acceleration jerk in Y 
 direction for each activity for each subject.   
-21. timeDomainBodyGyroMeanX 
+21.timeDomainBodyGyroMeanX 
 Mean value of all observations in time domain of body gyropscope signal in X direction 
 for each activity for each subject.   
-22. timeDomainBodyGyroMeanY 
+22.timeDomainBodyGyroMeanY 
 Mean value of all observations in time domain of body gyropscope signal in Y direction 
 for each activity for each subject.   
-23. timeDomainBodyGyroMeanZ
+23.timeDomainBodyGyroMeanZ
 Mean value of all observations in time domain of body gyropscope signal in Z direction 
 for each activity for each subject.    
-24. timeDomainBodyGyrostandardDeviationX
+24.timeDomainBodyGyrostandardDeviationX
 Standard deviation of all observations in time domain of body gyropscope signal in X 
 direction for each activity for each subject.   
-25. timeDomainBodyGyroStandardDeviationY
+25.timeDomainBodyGyroStandardDeviationY
 Standard deviation of all observations in time domain of body gyropscope signal in Y 
 direction for each activity for each subject.   
-26. timeDomaindBodyGyrostandardDeviationZ
+26.timeDomaindBodyGyrostandardDeviationZ
 Standard deviation of all observations in time domain of body gyropscope signal in Z 
 direction for each activity for each subject.   
-27. timeDomainBodyGyroJerkmeanX
+27.timeDomainBodyGyroJerkmeanX
 Mean value of all observations in time domain of body Jerk signal in X direction for 
 each activity for each subject.    
-28. timeDomainBodyGyroJerkMeanY
+28.timeDomainBodyGyroJerkMeanY
 Mean value of all observations in time domain of body Jerk signal in Y direction for 
 each activity for each subject.    
-29. timeDomainBodyGyroJerkMeanZ
+29.timeDomainBodyGyroJerkMeanZ
 Mean value of all observations in time domain of body Jerk signal in Z direction for 
 each activity for each subject.     
-30. timeDomainBodyGyroJerkStandardDeviationX
+30.timeDomainBodyGyroJerkStandardDeviationX
 Standard deviation of all observations in time domain of body Jerk signal in X direction 
 for each activity for each subject.    
-31. timeDomainBodyGyroJerkStandardDeviationY
+31.timeDomainBodyGyroJerkStandardDeviationY
 Mean value of all observations in time domain of body Jerk signal in Y direction for each 
 activity for each subject.     
 32. timeDomainBodyGyroJerkStandardDeviationZ, 
