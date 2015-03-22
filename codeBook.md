@@ -2,7 +2,7 @@
 
 1.Subject
 Subject for observation as defined in the data set, ranging from 1 to 30.
-2.Activity, 
+2.Activity
 activity label for rows for example WALKNG, LYING. it is also define in data set.
 3.timeDomainBodyAccelerationMeanX 
 Mean value of all observations in time domain of body acceleration in X direction 
