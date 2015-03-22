@@ -22,7 +22,7 @@ which will further explain the working of code. These different steps are:
 2. Combine trainData into columns as first column, subject train, second column.
 3. Read test data into tables.
 4. Combine testData into columns as first column, subject test, second column.
-5. read features_info from file, make put it as column names of new data set.
+5. read features.txt from file, make put it as column names of new data set.
 6. get mean and std columns.
 7 read activities.
 8. Link activity with labels. 
@@ -32,6 +32,26 @@ in lower camel case.
 11. average it one subject and label.
 12. export data set
 
+### Detailed Information about Steps
+
+In first step program will load train data in subject_train, x_train and y_train.
+In second step data of first step will be joined in columns to get all trained 
+data. Output of this step is trainData. In 3rd step test data will be loaded into
+subject_test, x_test and y_test. In fourth step 3rd step data will be joined in 
+different columns to product testData variable. trainData and testData will be joined
+at the end of fourth step as finalData. In 5th step features will be loaded into 
+features variable which will be concatenated with two new rows for subject and labels.
+In the end second column of this is loaded as finalData column set. In sixth step mean
+and std columns are retained whereas other columns are removed. In seventh step activities 
+are read into acitvities_label variable. In eigth step activities_label is merged with finalData.
+This will produce inner join and we have now labels for activites. In ninth step extra columns
+from finalData is removed to retain just need variables into final data. In 10th step meaningful 
+names are assigned to column names of finalData. In elevnth step mean is calculated for each 
+observation of each activities. In 12th step a tab separated final output file is created in 
+the working directory.
+
+It also includes codebook.txt, which explains columns used in output.txt.
+
 ### Contact
 
-please contact me if you have problem in running code. 
+please contact me if you have problem: sakram80@gmail.com

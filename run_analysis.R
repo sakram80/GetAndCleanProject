@@ -29,7 +29,7 @@ testData <- cbind(subject_test, y_test, x_test)
 ## Combine train and test data tables 
 finalData <- rbind(trainData, testData)
 
-## 5. read features_info from file, make put it as column names of new data set
+## 5. read features.txt from file, make put it as column names of new data set
 features <- read.table(paste(workingDirectory, "/features.txt", sep = ""));
 df <- data.frame(V1 = c(1, 2), V2 = c("subject", "labels"))
 dataHeader <- rbind(df, features)
