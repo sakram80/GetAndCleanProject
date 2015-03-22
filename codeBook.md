@@ -1,4 +1,4 @@
-Output Columns Explaination:
+Output Columns Information
 1.Subject
 Subject for observation as defined in the data set, ranging from 1 to 30.
 2.Activity, 
@@ -249,3 +249,30 @@ tBodyGyroMag, tBodyGyroJerkMag).
 Mean frequency of magnitude of all observations in frequency domain of body body gyropscope signal Jerk. 
 Magnitude is calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, 
 tBodyGyroMag, tBodyGyroJerkMag).      
+
+Internal Variables of Code:
+1. Subject_train:
+subject train variable.
+2. x_train:
+actual train data into script.
+3. y_train:
+activities train data variable.
+4. subject_test
+subject test variable.
+5. x_test
+actual test data into script.
+6. y_test
+activities test data variable.
+7. testData
+column joined data of test variables.
+8. trainData
+column joined data of train variables.
+9. finalData
+finalData produced by joining in rows, then given proper column names are assigned, and then merged with activities.
+10. acitvities_label
+labels of activities for example WALKING.
+11. tidyData
+final tidyData with mean of each activity for each subject. 
+
+output.txt:
+output.txt contains output generated from tidyData variable. Each column is tab separated. 
